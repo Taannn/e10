@@ -1,0 +1,107 @@
+// took the pre-built card from https://codepen.io/havardob/pen/PoJapGX and modified its colors etc. to match the overall design
+
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+/* custom variables */
+:root {
+  --process-cyan: #30bcedff;
+  --jet: #303036ff;
+  --ghost-white: #E0EFDE;
+  --tomato: #41BDAD;
+  --white: #ffffffff;
+  --picton-blue: #00a7e1ff;
+  --rich-black: #00171f;
+  --prussian-blue: #003459;
+  --cerulean: #007ea7ff;
+  --ff-main: 'Six Caps', sans-serif;
+}
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1.4rem;
+	width: 90%;
+	max-width: 250px;
+	margin: 0;
+  background-color: var(--prussian-blue);
+  padding: 1rem;
+  border-radius: 0.2rem;
+  background: #003459;
+  box-shadow: inset 6px 6px 12px #001728,
+              inset -6px -6px 12px #00518a;
+}
+
+.card {
+	border-radius: 0.2rem;
+	max-width: 210px;
+}
+.information {
+	background-color: var(--white);
+	padding: 1.5rem;
+    font-family: "Spline Sans", sans-serif;
+	line-height: 1.5;
+	.tag {
+		display: inline-block;
+		background-color: var();
+		color: var(--tomato);
+		font-weight: 600;
+		font-size: 0.685rem;
+		padding: 0.5rem;
+		line-height: 1;
+		border-radius: 6px;
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+
+	.title {
+		font-size: 1rem;
+		color: var(--rich-black);
+		line-height: 1.25;
+		& + * {
+			margin-top: 1rem;
+		}
+	}
+
+	.info {
+        font-size: 0.725rem;
+		color: var(--rich-black);
+		& + * {
+			margin-top: 1.25rem;
+		}
+	}
+
+	.button {
+		font-size: 0.6rem;
+		line-height: 1;
+		background-color: var(--white);
+		border: 2px solid var(--tomato);
+		color: var(--tomato);
+		border-radius: 6px;
+		font-weight: 500;
+		display: inline-flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+		&:hover,
+		&:focus {
+		background-color: var(--tomato);
+		color: var(--white);
+		}
+		a {
+			padding: 0.3rem 0.5rem;
+			color: var(--tomato);
+			display: flex;
+			align-items: center;
+			&:hover,
+			&:focus {
+			background-color: var(--tomato);
+			color: var(--white);
+			}
+		}
+	}
+
+
+
+}

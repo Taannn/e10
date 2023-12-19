@@ -1,0 +1,84 @@
+/* https://uiverse.io/vinodjangid07/horrible-eel-23 pre-built social media cart by vinodjangid07 from uiverse, modified some styles(dimensions and radius, adaded one card too for the profile picture) to fit perfectly on the header */
+
+.cardContainer {
+  width: fit-content;
+  height: fit-content;
+  /* background-color: rgb(238, 238, 238); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  gap: 20px;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); */
+  border-radius: 0.2rem;
+  border-radius: 0.2rem;
+  background: #f4f8fa;
+  box-shadow: inset 5px 5px 10px #c6c9cb,
+              inset -5px -5px 10px #ffffff;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 32px;
+  height: 32px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  border-radius: 0.2rem;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+/* avatar */
+.avatar {
+  border-radius: 50%;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+.socialSvg {
+  width: 17px;
+}
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+}
